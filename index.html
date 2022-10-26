@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi primer programa en JS</title>
+
+    <style>
+
+body{
+    background: black;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(239, 232, 179);
+    text-align: center;
+
+}
+
+#animal{
+    
+    background-color: rgb(239, 232, 179);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: left;
+    width: 33%;
+    height: 280px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top:20px;
+    margin-left: 3px;
+    border: 1px solid black;
+  
+}
+
+#animal1{
+    
+    background-color: rgb(239, 232, 179);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: left;
+    width: 33%;
+    height: 280px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top:20px;
+    margin-left: 3px;
+}
+
+#animal2{
+    
+    background-color: rgb(239, 232, 179);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: left;
+    width: 33%;
+    height: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top:20px;
+    margin-left: 3px;
+}
+
+#animal3{
+    
+    background-color: rgb(239, 232, 179);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: left;
+    width: 33%;
+    height: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top:20px;
+    margin-left: 3px;
+}
+
+#animal4{
+    
+    background-color: rgb(239, 232, 179);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: left;
+    width: 33%;
+    height: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top:20px;
+    margin-left: 3px;
+}
+
+#animal5{
+    
+    background-color: rgb(239, 232, 179);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: left;
+    width: 33%;
+    height: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top:20px;
+    margin-left: 3px;
+}
+
+
+		
+		.imagenesanimales{
+			
+            
+			align-items: center;
+            width: 380px;
+            height: 260px;
+            text-align: center;
+            margin: 0 auto;
+            border-radius: 10px;
+		}
+
+#pie{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(239, 232, 179);
+    text-align: center;
+    font-size: 2em;
+}
+
+    </style>
+</head>
+<body>
+    <h1>¿Te gustan los animales salvajes?</h1>
+    
+    
+    <div id="animal">
+        este es el sapo
+        
+        <br\>
+        <br\>
+        <br\>
+        
+        <img src="imagenes/sapo.jpg" class="imagenesanimales">
+             
+    </div>
+    
+    <div id="animal1">
+        esta es la morsa
+        <img src="imagenes/morsa.jpg" class="imagenesanimales">
+                        
+    </div>
+
+    <div id="animal2">
+         este es el buitre
+        <img src="imagenes/buitre.jpg" class="imagenesanimales">
+     </div>
+
+     <div id="animal3">
+        este es el cocodrilo
+        
+        <br\>
+        
+        <img src="imagenes/cocodrilo.jpg" class="imagenesanimales">
+             
+    </div>
+    
+    <div id="animal4">
+        esta es el hipopotamo
+        <img src="imagenes/hipopotamo.jpg" class="imagenesanimales">
+                        
+    </div>
+
+    <div id="animal5">
+         este es el tapir
+        <img src="imagenes/tapir.jpg" class="imagenesanimales">
+     </div>
+        
+    <script>
+        var animal = document.getElementById("animal"); 
+        var miAnimal = prompt("escribe aqui tu animal", "solo sapo, morsa, buitre, cocodrilo, hipopotamo y tapir");
+
+    
+
+        if(miAnimal == "sapo"){
+
+           // document.getElementById("imagensapo");
+            
+            animal.style.backgroundColor = "brown";
+            animal.style.color = "white";
+            
+        }
+        
+        else if(miAnimal == "morsa"){
+            
+            animal1.style.backgroundColor = "brown";
+            animal1.style.color = "white";
+            // esto funciona llamando al div, debe ser POO, tengo que llamar al div que contiene el animal indicado
+            // mas facil seria si llamo al div por el nombre del animal
+        }
+
+        else if(miAnimal == "buitre"){
+            
+            animal2.style.backgroundColor = "brown";
+            animal2.style.color = "white";
+            
+        }
+
+        else if(miAnimal == "cocodrilo"){
+            
+            animal3.style.backgroundColor = "brown";
+            animal3.style.color = "white";
+            
+        }
+
+        else if(miAnimal == "hipopotamo"){
+            
+            animal4.style.backgroundColor = "brown";
+            animal4.style.color = "white";
+            
+        }
+
+        else if(miAnimal == "tapir"){
+            
+            animal5.style.backgroundColor = "brown";
+            animal5.style.color = "white";
+            
+        }
+
+            else{
+                alert("no esta ese animal");
+            }
+
+        
+
+    </script>
+
+    <p id="pie">
+        ¡Dale F5 para volver a jugar!
+    </p>
+    
+
+    <div>
+	<!-- <img src="sapo.jpg" class="imagenesanimales"> -->
+
+    </div>
+	
+	 <div>
+	<!-- <img src="imagenes/morsa.jpg" class="imagenesanimales"> -->
+
+    </div>
+	
+	 <div>
+	<!-- <img src="imagenes/buitre.jpg" class="imagenesanimales"> -->
+
+    </div>
+    
+
+
+</body>
+</html>
